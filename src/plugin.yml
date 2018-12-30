@@ -1,0 +1,8 @@
+name: Hero
+main: com.qq44920040.miecarft.hero.Hero
+version: 1.1.0
+
+commands:
+    hp:
+        description: hp
+        usage: Please use /hp help for help

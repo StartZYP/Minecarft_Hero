@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Hero:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hero_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Hero.jar">
+        <element id="module-output" name="Hero" />
+      </element>
+    </root>
+  </artifact>
+</component>

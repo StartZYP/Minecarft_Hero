@@ -1,0 +1,115 @@
+#maybe后缀 可能性(百分比 无% 非小数)
+#wait后缀 冷却时间(单位:秒)
+
+
+#玩家未注册移动时 控制台触发命令 支持变量 %player%
+server_command: "cc open 门派菜单 %player%"
+#技能冷却提示
+wait: "技能剩余冷却时间: %time%"
+#聊天边框设置 %title% 就是各职业的称号
+chartitle: "&e[%title%&e]"
+
+#主提示标题设置
+title: "&e[&d&l幻想大陆门派&e]&2: "
+
+#坦克设置
+tank:
+  title: "天机营"
+  skills:
+    hard:
+      message: "&4您触发了&c&l刚硬&4技能，吸收&c20%&4伤害恢复"
+      maybe: 15
+      wait: 0
+
+#战士设置
+warrior:
+  title: "荒火教"
+  skills:
+    crit:
+      message: "&4您触发了&c&l暴怒技能&4，造成了额外100%伤害！"
+      maybe: 50
+      wait: 0
+    fly:
+      message: "&c您触发了&4&l震击&c!击飞了目标范围敌人！"
+      maybe: 20
+      wait: 0
+
+#奶妈设置
+healer:
+  title: "冰心堂"
+  skills:
+    healone:
+      message: "&2您使用回春，目标恢复部分生命值。"
+      lore: "&a[左键该物品可以触发回春]"
+      maybe: 100
+      wait: 10
+    healRange:
+      message: "&c您使用了冰心，并且恢复了所有生命值"
+      lore: "&a[右键该物品可以触发冰心]"
+      maybe: 100
+      wait: 25
+#刺客设置
+darkinator:
+  title: "魍魉"
+  skills:
+    behindKill:
+      message: "&c您触发了&4&l隐刺技能&c！打出了5倍伤害的暴击！"
+      maybe: 100
+      wait: 5
+    vanish:
+      message: "&c您使用了隐身粉，范围内3格玩家全部隐身。"
+      lore: "&c[右键该物品可以触发隐身粉]"
+      maybe: 100
+      wait: 6
+
+#辅助设置
+helper:
+  title: "太虚观"
+  skills:
+    fix:
+      message: "&c您使用了锁身，并且禁锢了目标。"
+      lore: "&c[左键该物品可以使用锁身技能]"
+      maybe: 100
+      wait: 5
+    nodamage:
+      message: "&c您使用了金身!目标进入无敌状态，并且减速！"
+      lore: "&c[右键该物品可以使用金身技能]"
+      maybe: 100
+      wait: 5
+
+#法师设置
+magician:
+  title: "云麓仙居"
+  skills:
+    fire:
+      message: "&c您使用了&4&l[引燃]&c！对爆炸范围内造成了魔法伤害！"
+      lore: "&4[左键可以触发爆燃]"
+      maybe: 100
+      wait: 5
+    ghost:
+      message: "&c您使用了&4&l[鬼咒]&c!对爆炸范围内造成了魔法伤害！"
+      lore: "&4[右键可以触发鬼咒]"
+      maybe: 100
+      wait: 5
+
+#弓箭手设置
+shooter:
+  title: "翎羽山庄"
+  skills:
+    crit:
+      message: "&c您触发了&4&l暴击&c！被命中的敌人额外造成100%伤害！"
+      maybe: 66
+      wait: 0
+    arrows:
+      message: "&c您触发了&4&l乱箭&c！发射了一阵剑雨！"
+      maybe: 100
+      wait: 10
+#鬼墨庄设置
+ghostInk:
+  title: "鬼墨庄"
+  skills:
+    effect:
+      message: "&c您使用了了&4&l瞬斩&c！对前方敌人造成真是伤害！"
+      lore: "&c[右键该物品可以触发瞬斩技能]"
+      maybe: 100
+      wait: 10
